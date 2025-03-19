@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo span {
+    font-size: 14px;
+    color: gray;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+/* Image Gallery */
+/* main { 
+    padding: 100px 50px 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}*/
+ .gallery{
+    display: grid;
+    grid-template-areas:
+    'pic1 pic4 pic7 pic10 pic13'
+    'pic1 pic5 pic7 pic11 pic13'
+    'pic2 pic5 pic8 pic11 pic14'
+    'pic2 pic6 pic8 pic12 pic14'
+    'pic3 pic6 pic9 pic12 pic15';  
+    grid-template-rows: repeat(5,200px);
+    grid-template-columns:repeat(5,1fr);
+    padding: 0px;
+    gap: 10px;
+
+} 
+.pic1{
+    grid-area: pic1;
+    padding: 0px;
+}
+.pic2{
+    grid-area: pic2;
+    padding: 0px;
+}
+.pic3{
+    grid-area: pic3;
+    padding: 0px;
+}
+.pic4{
+    grid-area: pic4;
+    padding: 0px;
+}
+.pic5{
+    grid-area: pic5;
+    padding: 0px;
+}
+.pic6{
+    grid-area: pic6;
+    padding: 0px;
+}
+.pic7{
+    grid-area: pic7;
+    padding: 0px;
+}
+.pic8{
+    grid-area: pic8;
+    padding: 0px;
+}
+.pic9{
+    grid-area: pic9;
+    padding: 0px;
+}
+.pic10{
+    grid-area: pic10;
+    padding: 0px;
+}
+.pic11{
+    grid-area: pic11;
+    padding: 0px;
+}
+.pic12{
+    grid-area: pic12;
+    padding: 0px;
+}
+.pic13{
+    grid-area: pic13;
+    padding: 0px;
+}
+.pic14{
+    grid-area: pic14;
+    padding: 0px;
+}
+.pic15{
+    grid-area: pic15;
+    padding: 0px;
+}
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KAVI'S WORLD <span>PHOTOGRAPHY</span></div>
+        <nav>
+            <ul>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Commercial</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="gallery">
+            <div class="pic1">
+                <img src="blue1.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic2">
+                <img src="blue2.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic3">
+            <img src="blue3.jpeg" alt=""  height="100%" width="100%">
+            </div>
+            <div class="pic4">
+            <img src="blue4.jpeg" alt=""  height="100%" width="100%">
+            </div>
+            <div class="pic5">
+            <img src="blue5.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic6">
+            <img src="blue6.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic7">
+            <img src="blue7.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic8">
+            <img src="blue8.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic9" >
+            <img src="blue9.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic10">
+            <img src="blue10.jpeg" alt="" height="100%" width="100%">
+           </div>
+           <div class="pic11">
+            <img src="blue11.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic12">
+            <img src="blue12.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic13">
+                <img src="blue13.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="pic14">
+                <img src="blue14.jpeg" alt="" height="100%" width="100%">
+            </div>
+            <div class="piv15">
+                <img src="blue15.jpeg" alt="" height="100%" width="100%">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
